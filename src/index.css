@@ -1161,6 +1161,9 @@ h1 > span:not(.accent-period) {
   margin-top: 23px;
 }
 .experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding-left: 28px;
   border-left: 1px solid #393044;
 }
@@ -1216,14 +1219,22 @@ h1 > span:not(.accent-period) {
   line-height: 1.9;
   margin-top: 16px;
 }
-.experience-placeholder {
-  display: block;
-  border-top: 1px dashed #38303f;
-  margin-top: 23px;
+.education-graduation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 18px 0 0;
   padding-top: 16px;
-  font-size: 10px;
-  color: #a397b3;
-  font-family: var(--font-mono);
+  border-top: 1px solid #302a3b;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.education-graduation dt {
+  color: #a1a1aa;
+}
+.education-graduation dd {
+  margin: 0;
+  color: #c4b5dd;
 }
 .contact-section {
   padding-block: 90px;

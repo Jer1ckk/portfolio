@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="contact-glow" aria-hidden="true" />
           <div className="contact-content">
             <p className="eyebrow">
-              <span>05 /</span> LET’S CONNECT
+              <span>06 /</span> LET’S CONNECT
             </p>
             <h2 id="contact-title">
               Have something in mind?

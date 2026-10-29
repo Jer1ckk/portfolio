@@ -11,13 +11,31 @@ export const profile = {
 
 export const experience = [
   {
-    id: "internship",
-    type: "Internship · placeholder",
-    role: "[Your internship role]",
-    organization: "[Organization name]",
-    duration: "[Start date — end date]",
+    id: "workplace-1",
+    type: "Internship",
+    role: "Backend Developer Intern",
+    organization: "KASEGRO Co., Ltd.",
+    duration: "May – July 2026",
+
     description:
-      "Add your responsibilities, the technologies you used, and your specific contributions. Include only work you can discuss and demonstrate.",
-    technologies: [],
+      "Developed backend authentication APIs and farmer-side marketplace features, including OTP verification, Google login, product management, supply and demand workflows, and API documentation.",
+
+    technologies: [
+      "Laravel",
+      "MySQL",
+    ],
+  },
+];
+
+// Add your actual education details. Keep the most recent qualification first.
+export const education = [
+  {
+    id: "university",
+    degree: "Bachelor of Computer Science",
+    institution: "Cambodia Academy of Digital Technology (CADT)",
+    duration: "2023 – 2027",
+    graduation: "Expected 2027",
+    description:
+      "Studying computer science with a focus on software development, web technologies, and database systems.",
   },
 ];

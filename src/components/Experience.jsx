@@ -47,9 +47,6 @@ export default function Experience() {
                   ))}
                 </div>
               )}
-              <span className="experience-placeholder">
-                Your next chapter goes here.
-              </span>
             </article>
           ))}
         </div>
