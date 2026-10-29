@@ -10,6 +10,7 @@ const sections = [
   "Skills",
   "Projects",
   "Experience",
+  "Education",
   "Contact",
 ];
 
