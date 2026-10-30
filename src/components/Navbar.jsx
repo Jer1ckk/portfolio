@@ -51,25 +51,32 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="site-header">
-      <div className="container nav-inner">
+    <header className="sticky top-0 z-30 bg-[#0b0b0ff2] border-b border-b-[#202027] [backdrop-filter:blur(14px)]">
+      <div className="container mx-auto w-[min(1160px,_calc(100%_-_96px))] max-compact:w-[calc(100%_-_64px)]
+        max-mobile:w-[calc(100%_-_40px)] h-[83px] flex items-center justify-between gap-6 max-nav:h-18
+        max-mobile:gap-3">
         <a
           href="#home"
-          className="wordmark"
+          className="wordmark inline-flex items-center gap-[11px] text-[15px] font-semibold tracking-[-0.4px]
+            whitespace-nowrap max-mobile:text-[14px]"
           onClick={() => setOpen(false)}
           aria-label={`${profile.name}, home`}
         >
-          <span className="logo-symbol">
+          <span className="grid place-items-center w-[33px] h-[33px] text-[#ad8cfb] border border-[#3c2c57] rounded-lg
+            bg-[#191324]">
             <CodeXml size={22} strokeWidth={1.8} aria-hidden="true" />
           </span>
           <span>
             {profile.name}
-            <span className="logo-dot">.</span>
+            <span className="text-violet">.</span>
           </span>
         </a>
         <nav
           id="main-navigation"
-          className={`main-navigation ${open ? "is-open" : ""}`}
+          className={`flex items-center gap-[27px] max-compact:gap-5
+            max-nav:absolute max-nav:top-[72px] max-nav:inset-x-0 max-nav:px-8 max-nav:py-5
+            max-nav:bg-[#121117] max-nav:border-b max-nav:border-[#3b3049] max-nav:shadow-[0_20px_30px_#0004]
+            ${open ? "max-nav:grid max-nav:grid-cols-2 max-nav:gap-[7px_20px]" : "max-nav:hidden"}`}
           aria-label="Main navigation"
         >
           {sections.map((section) => {
@@ -78,7 +85,11 @@ export default function Navbar() {
               <a
                 key={id}
                 href={`#${id}`}
-                className={active === id ? "active" : ""}
+                className={`relative inline-flex items-center h-11 text-[12px] transition-colors duration-180
+                  hover:text-[#f5f5f7] max-nav:px-3 max-nav:h-[45px] max-nav:rounded-[5px]
+                  ${active === id
+                    ? "text-[#f5f5f7] after:content-[''] after:absolute after:size-1 after:rounded-full after:bg-violet after:left-[calc(50%_-_2px)] after:bottom-0 max-nav:text-[#c4b5fd] max-nav:bg-[#21192d] max-nav:after:hidden"
+                    : "text-[#a1a1aa]"}`}
                 aria-current={active === id ? "location" : undefined}
                 onClick={() => setOpen(false)}
               >
@@ -87,15 +98,18 @@ export default function Navbar() {
             );
           })}
         </nav>
-        <div className="nav-actions">
+        <div className="flex items-center gap-3 max-mobile:gap-[10px]">
           <SocialLink
             href={profile.github}
             icon={Github}
             label="GitHub"
-            className="nav-github"
+            className="px-[11px] py-[6px] max-mobile:px-[9px] max-mobile:py-[6px] max-narrow:px-0 max-narrow:py-0 border
+              border-[#30303b] rounded-[7px] [&_.placeholder-label]:hidden max-mobile:text-[10px]
+              max-mobile:[&_svg]:w-[14px] max-narrow:border-0 max-narrow:[&_>_span]:hidden"
           />
           <button
-            className="icon-button menu-toggle"
+            className="w-10 h-10 hidden items-center justify-center bg-[#18181f] border border-[#31313e] rounded-lg
+              hover:bg-[#22212c] max-nav:inline-flex"
             aria-expanded={open}
             aria-controls="main-navigation"
             aria-label={open ? "Close navigation" : "Open navigation"}

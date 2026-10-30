@@ -11,7 +11,8 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <a className="skip-link" href="#main-content">
+      <a className="px-[18px] py-3 fixed z-100 left-[16px] top-[12px] [transform:translateY(-150%)] bg-accent text-white
+        rounded-[6px] focus:[transform:translateY(0)]" href="#main-content">
         Skip to content
       </a>
       <Navbar />
