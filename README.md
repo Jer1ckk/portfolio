@@ -41,9 +41,11 @@ src/components/         Navbar, Hero, About, Skills, Projects, ProjectCard,
                         Footer, and shared components
 src/data/               Editable profile, experience, project, and skill data
 src/App.jsx             Page composition
-src/index.css           Tailwind import, design tokens, responsive styles
+src/index.css           Tailwind theme, global defaults, animation keyframes
 src/main.jsx            React entry point
 ```
+
+Component styling uses Tailwind utilities, including responsive variants, hover/focus states, and decorative artwork. Custom `narrow`, `mobile`, `nav`, `compact`, and `wide` breakpoints in `src/index.css` preserve the existing layout cutoffs. Remaining CSS provides theme tokens, global defaults, and reduced-motion support.
 
 The UI includes active section navigation, a mobile menu, project category filters, native modal project details with keyboard focus containment and Escape dismissal, anchor scrolling, hover and focus states, a skip link, and reduced-motion support. The year in the footer updates automatically. There is no router or backend to configure.
 
