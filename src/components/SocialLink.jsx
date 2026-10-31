@@ -16,7 +16,10 @@ export default function SocialLink({
         <Icon size={17} aria-hidden="true" />
         <span>
           {label}
-          <span className="placeholder-label text-[10px] text-[#96919e]"> · add link</span>
+          <span className="placeholder-label text-[10px] text-[#96919e]">
+            {" "}
+            · add link
+          </span>
         </span>
       </span>
     );

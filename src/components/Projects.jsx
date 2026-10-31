@@ -18,11 +18,12 @@ export default function Projects() {
       className="py-26 max-nav:py-20 max-mobile:py-[65px] border-t border-t-[#202027] scroll-mt-[25px]"
       aria-labelledby="projects-title"
     >
-      <div className="container mx-auto w-[min(1160px,_calc(100%_-_96px))] max-compact:w-[calc(100%_-_64px)]
-        max-mobile:w-[calc(100%_-_40px)]">
+      <div
+        className="container mx-auto w-[min(1160px,_calc(100%_-_96px))] max-compact:w-[calc(100%_-_64px)]
+        max-mobile:w-[calc(100%_-_40px)]"
+      >
         <div className="flex justify-between items-end gap-6 max-mobile:items-start">
           <SectionHeading
-            number="03"
             label="SELECTED WORK"
             title={<span id="projects-title">Ideas, brought into focus.</span>}
           >
@@ -32,8 +33,10 @@ export default function Projects() {
             {String(projects.length).padStart(2, "0")} PROJECTS
           </span>
         </div>
-        <div className="flex justify-between items-center gap-4 mt-[35px] mb-[25px] max-nav:items-start max-nav:flex-col
-          max-nav:gap-3 max-mobile:mt-6 max-mobile:gap-[15px]">
+        <div
+          className="flex justify-between items-center gap-4 mt-[35px] mb-[25px] max-nav:items-start max-nav:flex-col
+          max-nav:gap-3 max-mobile:mt-6 max-mobile:gap-[15px]"
+        >
           <div
             className="flex flex-wrap gap-[5px] max-mobile:gap-[3px]"
             role="group"
@@ -59,8 +62,10 @@ export default function Projects() {
           Showing {visibleProjects.length}{" "}
           {visibleProjects.length === 1 ? "project" : "projects"}
         </p>
-        <div className="grid grid-cols-3 gap-[22px] max-compact:gap-4 max-nav:grid-cols-[1fr_1fr] max-nav:gap-5
-          max-mobile:grid-cols-1 max-mobile:gap-6">
+        <div
+          className="grid grid-cols-3 gap-[22px] max-compact:gap-4 max-nav:grid-cols-[1fr_1fr] max-nav:gap-5
+          max-mobile:grid-cols-1 max-mobile:gap-6"
+        >
           {visibleProjects.map((project) => (
             <ProjectCard
               key={project.id}
