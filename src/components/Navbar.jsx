@@ -52,9 +52,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-30 bg-[#0b0b0ff2] border-b border-b-[#202027] [backdrop-filter:blur(14px)]">
-      <div className="container mx-auto w-[min(1160px,_calc(100%_-_96px))] max-compact:w-[calc(100%_-_64px)]
+      <div
+        className="container mx-auto w-[min(1160px,_calc(100%_-_96px))] max-compact:w-[calc(100%_-_64px)]
         max-mobile:w-[calc(100%_-_40px)] h-[83px] flex items-center justify-between gap-6 max-nav:h-18
-        max-mobile:gap-3">
+        max-mobile:gap-3"
+      >
         <a
           href="#home"
           className="wordmark inline-flex items-center gap-[11px] text-[15px] font-semibold tracking-[-0.4px]
@@ -62,8 +64,10 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
           aria-label={`${profile.name}, home`}
         >
-          <span className="grid place-items-center w-[33px] h-[33px] text-[#ad8cfb] border border-[#3c2c57] rounded-lg
-            bg-[#191324]">
+          <span
+            className="grid place-items-center w-[33px] h-[33px] text-[#ad8cfb] border border-[#3c2c57] rounded-lg
+            bg-[#191324]"
+          >
             <CodeXml size={22} strokeWidth={1.8} aria-hidden="true" />
           </span>
           <span>
@@ -87,9 +91,11 @@ export default function Navbar() {
                 href={`#${id}`}
                 className={`relative inline-flex items-center h-11 text-[12px] transition-colors duration-180
                   hover:text-[#f5f5f7] max-nav:px-3 max-nav:h-[45px] max-nav:rounded-[5px]
-                  ${active === id
-                    ? "text-[#f5f5f7] after:content-[''] after:absolute after:size-1 after:rounded-full after:bg-violet after:left-[calc(50%_-_2px)] after:bottom-0 max-nav:text-[#c4b5fd] max-nav:bg-[#21192d] max-nav:after:hidden"
-                    : "text-[#a1a1aa]"}`}
+                  ${
+                    active === id
+                      ? "text-[#f5f5f7] after:content-[''] after:absolute after:size-1 after:rounded-full after:bg-violet after:left-[calc(50%_-_2px)] after:bottom-0 max-nav:text-[#c4b5fd] max-nav:bg-[#21192d] max-nav:after:hidden"
+                      : "text-[#a1a1aa]"
+                  }`}
                 aria-current={active === id ? "location" : undefined}
                 onClick={() => setOpen(false)}
               >

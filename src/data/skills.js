@@ -1,5 +1,3 @@
-// These are supplied examples, not confirmed proficiency claims.
-// Change confirmed to true only for technologies you have actually used.
 export const skills = [
   {
     id: "frontend",
@@ -7,7 +5,6 @@ export const skills = [
     description: "Interfaces that feel right.",
     icon: "frontend",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
-    confirmed: false,
   },
   {
     id: "backend",
@@ -15,7 +12,6 @@ export const skills = [
     description: "The logic behind the experience.",
     icon: "backend",
     technologies: ["Node.js", "Express.js", "PHP", "Laravel", "REST APIs"],
-    confirmed: false,
   },
   {
     id: "database",
@@ -28,7 +24,6 @@ export const skills = [
       "mongoDB",
       "Firebase Realtime Database",
     ],
-    confirmed: false,
   },
   {
     id: "mobile",
@@ -36,7 +31,6 @@ export const skills = [
     description: "Building cross-platform applications.",
     icon: "mobile",
     technologies: ["Dart", "Flutter"],
-    confirmed: true,
   },
 ];
 

@@ -97,13 +97,13 @@ export default function ProjectDetails({ project, onClose }) {
         ))}
       </div>
 
-      <h3 className="mt-[25px] text-[13px] font-medium">Features & implementation status</h3>
+      <h3 className="mt-[25px] text-[13px] font-medium">Features</h3>
       <ul className="px-0 py-0 mx-0 [&_>_li]:px-0 [&_>_li]:py-3 list-none mt-3 mb-6 [&_>_li]:flex
         [&_>_li]:justify-between [&_>_li]:gap-[15px] [&_>_li]:items-center [&_>_li]:border-b
         [&_>_li]:border-b-[#302939] [&_>_li]:text-[12px] max-mobile:[&_>_li]:text-[11px]">
         {project.features.map((feature) => (
-          <li key={feature.name}>
-            <span>{feature.name}</span>
+          <li key={feature}>
+            <span>{feature}</span>
           </li>
         ))}
       </ul>

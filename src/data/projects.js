@@ -1,8 +1,7 @@
 // Supplied project examples. Verify each feature and contribution before publishing.
 // Add real screenshots as image paths; null uses explicitly illustrative artwork.
-// Feature status must be 'unverified', 'planned', or 'implemented'.
 export const projects = [
- {
+  {
     id: "kaseapp",
     title: "KaseApp Market Module",
     category: "Backend",
@@ -23,57 +22,19 @@ export const projects = [
     ],
 
     features: [
-      {
-        name: "Authentication APIs",
-        status: "implemented",
-      },
-      {
-        name: "Phone OTP verification",
-        status: "implemented",
-      },
-      {
-        name: "Email verification and password reset",
-        status: "implemented",
-      },
-      {
-        name: "Google login",
-        status: "implemented",
-      },
-      {
-        name: "Profile management",
-        status: "implemented",
-      },
-      {
-        name: "Crop and product APIs",
-        status: "implemented",
-      },
-      {
-        name: "Supply and demand management",
-        status: "implemented",
-      },
-      {
-        name: "Demand browsing and matching",
-        status: "implemented",
-      },
-      {
-        name: "Offer submission",
-        status: "implemented",
-      },
-      {
-        name: "Sale order management",
-        status: "implemented",
-      },
-      {
-        name: "Swagger API documentation",
-        status: "implemented",
-      },
-      {
-        name: "Database design",
-        status: "implemented",
-      },
+      "Authentication APIs",
+      "Phone OTP verification",
+      "Email verification and password reset",
+      "Google login",
+      "Profile management",
+      "Crop and product APIs",
+      "Supply and demand management",
+      "Demand browsing and matching",
+      "Offer submission",
+      "Sale order management",
+      "Swagger API documentation",
+      "Database design",
     ],
-
-    status: "Internship Project",
 
     github: null,
     demo: null,
@@ -110,25 +71,11 @@ export const projects = [
     technologies: ["Flutter", "Dart", "Firebase Realtime Database"],
 
     features: [
-      {
-        name: "Bike stations and availability",
-        status: "implemented",
-      },
-      {
-        name: "Booking management and expiry",
-        status: "implemented",
-      },
-      {
-        name: "Daily, monthly, and annual passes",
-        status: "implemented",
-      },
-      {
-        name: "One active pass per user",
-        status: "implemented",
-      },
+      "Bike stations and availability",
+      "Booking management and expiry",
+      "Daily, monthly, and annual passes",
+      "One active pass per user",
     ],
-
-    status: "School Project",
 
     github: null,
     demo: null,
@@ -165,27 +112,13 @@ export const projects = [
     technologies: ["React", "Express.js", "MySQL", "Cloudinary"],
 
     features: [
-      {
-        name: "Recipe Search by Name or Ingredients",
-        status: "implemented",
-      },
-      {
-        name: "Detailed Cooking Instructions",
-        status: "implemented",
-      },
-      {
-        name: "External Recipe Links",
-        status: "implemented",
-      },
-      {
-        name: "Admin Dashboard",
-        status: "implemented",
-      },
+      "Recipe Search by Name or Ingredients",
+      "Detailed Cooking Instructions",
+      "External Recipe Links",
+      "Admin Dashboard",
     ],
 
-    status: "Personal Project",
-
-    github: null,
+    github: "https://github.com/obviouslynotdim/MhobFinder",
     demo: null,
 
     problem:
